@@ -36,6 +36,5 @@ public class Child {
 
     public void setAge(int age) {
         pcs.firePropertyChange("age", this.age, age);
-        this.age = age;
-    }
+        this.age = age; }
 }
