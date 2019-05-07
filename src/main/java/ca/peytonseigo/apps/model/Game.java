@@ -1,11 +1,57 @@
 package ca.peytonseigo.apps.model;
 
+import java.beans.PropertyChangeSupport;
+import java.util.List;
+
 /**
  * A Connect Four game that manages players, moderates game rules and tracks the state.
  * @author Peyton Seigo
  */
 public class Game {
-  /**
+    private Turn turn;
+    private List<Player> players;
+    private PropertyChangeSupport pcs;
+
+    public Game(){
+
+    }
+
+    /**
+     * Gets who's turn it is.
+     * @return who's turn it is
+     */
+    public Turn getTurn() {
+        return turn;
+    }
+
+    /**
+     * Sets the turn.
+     * Fires pcs to notify players of turn change.
+     * @param turn The player who's turn it is being set to.
+     * @throws
+     */
+    public void setTurn(Turn turn) {
+        this.turn = turn;
+
+    }
+
+    /**
+     * Changes the turn.
+     * For example, if the current value of turn is PLAYER1, changeTurn changes it to PLAYER2.
+     */
+    public void changeTurn(){
+
+    }
+
+    /**
+     * Adds a player to the game.
+     * @param p the player to be added
+     */
+    public void addPlayer(Player p){
+
+    }
+
+    /**
    * Computes a thing. Here is some extra info that wouldn't fit into the one sentence
    * description. You can reference names in the code using this syntax: {@code someParam}.
    *
@@ -22,4 +68,6 @@ public class Game {
 
     return 0;
   }
+
+
 }
