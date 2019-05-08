@@ -9,7 +9,7 @@ import java.util.List;
  * @author Peyton Seigo
  */
 public class Game {
-  private Turn turn;
+  private Player turn;
   private List<Player> players;
   private PropertyChangeSupport pcs;
 
@@ -22,18 +22,17 @@ public class Game {
    *
    * @return who's turn it is
    */
-  public Turn getTurn() {
+  public Player getTurn() {
     return turn;
   }
 
   /**
-   * Sets the turn.
-   * Fires pcs to notify players of turn change.
+   * Sets the turn. Fires property change event to notify players of turn change.
    *
    * @param turn The player who's turn it is being set to.
    * @throws
    */
-  public void setTurn(Turn turn) {
+  public void setTurn(Player turn) {
     this.turn = turn;
 
   }
