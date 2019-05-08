@@ -32,4 +32,5 @@ public class Player implements PropertyChangeListener {
 
   }
 
+  // TODO: override equals and hashcode; see Game.isActive/1
 }
