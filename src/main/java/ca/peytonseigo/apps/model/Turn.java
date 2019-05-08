@@ -1,6 +1,6 @@
 package ca.peytonseigo.apps.model;
 
 public enum Turn {
-    PLAYER1,
-    PLAYER2
+  PLAYER1,
+  PLAYER2
 }

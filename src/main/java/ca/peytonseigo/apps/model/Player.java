@@ -11,7 +11,7 @@ import static ca.peytonseigo.apps.model.Turn.PLAYER2;
  */
 public class Player implements PropertyChangeListener {
 
-    public void propertyChange(PropertyChangeEvent event){
+  public void propertyChange(PropertyChangeEvent event) {
 
-    }
+  }
 }
