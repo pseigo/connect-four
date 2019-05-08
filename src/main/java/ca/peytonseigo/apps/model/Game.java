@@ -1,5 +1,7 @@
 package ca.peytonseigo.apps.model;
 
+import com.google.common.collect.BiMap;
+
 import java.beans.PropertyChangeSupport;
 import java.util.List;
 
@@ -7,6 +9,7 @@ import java.util.List;
  * A Connect Four game that manages players, moderates game rules and tracks the state.
  *
  * @author Peyton Seigo
+ * @author Madeline Ferguson
  */
 public class Game {
   private Player turn;
@@ -29,12 +32,11 @@ public class Game {
   /**
    * Sets the turn. Fires property change event to notify players of turn change.
    *
-   * @param turn The player who's turn it is being set to.
+   * @param p The player who's turn it is being set to.
    * @throws
    */
-  public void setTurn(Player turn) {
-    this.turn = turn;
-
+  public void setTurn(Player p) {
+    this.turn = p;
   }
 
   /**
@@ -51,6 +53,14 @@ public class Game {
    * @param p the player to be added
    */
   public void addPlayer(Player p) {
+
+  }
+
+  /**
+   * Sends a move to the Board.
+   * @param column column to drop the piece into
+   */
+  public void makeMove(int column){
 
   }
 
