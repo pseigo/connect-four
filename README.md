@@ -70,13 +70,17 @@ In summary, the user gave an input that would have violated a key invariant: a p
 
 This is what makes code **robust**. In particular, a program that can appropriately deal with valid AND invalid states is robust.
 
+## Dependency Documentation
+
+- [Google Guava](https://github.com/google/guava/wiki)
+
 ## Logistics
 
 ### Style guide
 
 We follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html) for no particular reason other than (1) that IntelliJ IDEA's CheckStyle plugin supports Google's style guide by default and (2) that we want to stay consistent.
 
-### Semantic versioning
+### Semantic Versioning
 
 We are using semantic versioning for this project. We will begin versioning this software when it reaches a usuable state.
 
